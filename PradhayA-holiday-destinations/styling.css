@@ -1,0 +1,142 @@
+    body{
+    margin:0;
+    background-image:url(beautiful-place.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-width:500px;
+}
+
+
+
+html{
+    height: 100%;
+}
+section{
+
+min-height:100%;
+width:100%;
+background-color:white;
+margin: auto;
+margin: auto;
+padding-bottom: 15%;
+font-size:1em;
+}
+
+figcaption {
+    color: white;
+    font-size: small;
+    background-color: black;
+}
+figure:hover{
+    border-style: solid;
+    border-color:black;
+    border-width:3px;
+    border-bottom-width: 15px;
+}
+
+
+footer>ul{
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid lightseagreen;
+}
+#OverFooter{
+    margin-bottom: 15px;
+}
+@media (min-width: 930px){
+    footer>ul{
+    width: 70%;
+    padding-top: 20px;
+
+}
+#OverFooter{
+    text-align: center;
+
+  }
+
+}
+
+
+@media (max-width : 929px){
+    footer>ul{
+        width: 100%;
+        padding-top: 5px;
+        font-size: small;
+    }
+    #OverFooter{
+          margin-left: 35px;
+          margin-right: 10%;
+      }
+      footer ul li ul{
+          margin-left: -35px;
+
+
+      }
+
+}
+
+
+#headerText{
+    margin-top: -95px;
+    padding-bottom: 40px;
+    color: white;
+
+    font-weight: bold;
+
+  }
+
+
+  header{
+    font-family: -apple-system,Helvetica,Arial;
+  }
+
+
+footer>ul{
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid lightseagreen;
+}
+#OverFooter{
+    margin-bottom: 15px;
+}
+
+
+@media (min-width: 930px){
+    footer>ul{
+    width: 70%;
+    padding-top: 20px;
+
+}
+#OverFooter{
+    text-align: center;
+
+  }
+
+}
+
+
+@media (max-width : 929px){
+    footer>ul{
+        width: 100%;
+        padding-top: 5px;
+        font-size: small;
+    }
+    #OverFooter{
+          margin-left: 35px;
+          margin-right: 10%;
+      }
+      footer ul li ul{
+          margin-left: -35px;
+
+
+      }
+
+}
+
+
+    .topFoot {
+        font-size: large;
+        padding-bottom: 10px;
+    }

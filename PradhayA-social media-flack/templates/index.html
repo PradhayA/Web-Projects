@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html style="height:100%" xmlns:background-color="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="{{url_for('static',filename='script.js')}}"></script>
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>  <!--essential script for socket IO-->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='AnimationName-1590331639766-862.css')}}">
+    <title>Flack</title>
+</head>
+<body style="height:100%" class='container'>
+    <nav class='navbar justify-content-center'>
+        <img src="/static/images/logo_transparent.png" width="46" height="46" class="d-inline-block align-top" alt="">
+                  Flack </a>
+    </nav>
+    <div  class='row h-75 no-gutters border border-secondary'>
+        <div   class='col-9 bg-light border p-3 d-flex flex-column justify-content-end h-100'>
+            <div id='messages' >
+            <!--MESSAGES-->
+            </div>
+            <input id='messageInput' type='text' class="  form-control text-right " maxlength="80">
+        </div>
+        <div class='col-3  text-center'>
+            <h2 id='username' class='text-center bg-info m-1 rounded ' ></h2>
+            <h4 class='pl-1'>Messages</h4>
+            <ul id='inbox' class="list-group h-25 border border-light rounded m-1">
+            <!--PRIVATE CONVERSATIONS-->
+            </ul>
+            <h4 class='pl-1 pt-2'>Channels&nbsp; <kbd>+</kbd></h4>
+            <ul id='channelList' class="list-group text-center h-50 m-1 ">
+            <!--CHANNELS-->
+            </ul>
+        </div>
+    </div>
+    <small>
+        <p>Enjoy<br>
+    </small>
+    <div class="modal fade" id="myModal" color="#ff4dff">
+        <div class="modal-dialog">
+            <div class="modal-content ">
+                <!--HEADER-->
+                <div class="modal-header">
+
+                    <h4 class="modal-title "></h4>
+                </div>
+                <!--BODY-->
+                <div class="modal-body">
+                    <input id='modalInput' type='text' class="form-control w-50"  >
+                </div>
+                <!--FOOTER-->
+                <div class="modal-footer">
+                    <button id='modalButton' type="button" class="btn btn-danger" data-dismiss="modal" disabled>Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

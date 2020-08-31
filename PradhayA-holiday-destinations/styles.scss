@@ -1,0 +1,109 @@
+$headerFooterColor: darkslategrey;
+$titlesColor: white;
+
+%listStyle{
+    float: left;
+    display: inline;
+}
+
+%oiaRothMidTitles{
+        text-decoration: underline;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-left: 20%;
+        background-color: $titlesColor;
+
+}
+
+footer{
+    color:lightseagreen;
+    background-color:$headerFooterColor;
+
+    min-width: 100%;
+    height:300px;
+    margin-top:-35px;
+    padding-top:10px;
+
+    padding-bottom: 20px;
+
+    ul{
+        list-style: none;
+    }
+
+}
+
+
+
+  #HeaderLinks{
+    position: relative;
+    font-size:20px;
+    height: 60px;
+    background-color:$headerFooterColor;
+    margin-bottom: 150px;
+    li:hover>ol{
+
+        visibility:visible;
+        opacity: 1;
+
+      }
+
+    ol{
+        visibility:hidden;
+         opacity:0;
+         position: absolute;
+         background-color: $headerFooterColor;
+
+         color: black;
+
+       }
+     li{
+
+        a{
+            text-shadow: 1px 1px 0px $titlesColor;
+            text-decoration: none;
+            display: inline-block;
+
+            color: black;
+            padding: 5px 20px;
+          }
+
+          ol{
+
+            font-size: 15px;
+            padding-right: 5px;
+            border-top: 1px $headerFooterColor;
+            width: 300px;
+
+          }
+
+     }
+
+  }
+
+  footer>ul> li{
+      @extend %listStyle;
+    padding-right:15px;
+
+}
+
+#HeaderLinks>li{
+    @extend %listStyle;
+    font-size:25px;
+    font-weight: bold;
+    padding-left:15px;
+    position: relative;
+
+
+  }
+
+  .oia-titles{
+      @extend %oiaRothMidTitles;
+      margin-right: 40%;
+
+  }
+
+  .roth-titles {
+      @extend %oiaRothMidTitles;
+    margin-right: 20%;
+
+}
